@@ -2,3 +2,42 @@
     margin:0;
     padding: 0;
 }
+
+#logo{
+    height: 40px;
+    width: auto;
+}
+nav {
+background-color: #ffffff;
+display: flex;
+justify-content: space-between;
+align-items:center;
+padding: 20px 80px;
+
+}
+
+.navbar-textlink{
+display: flex;
+list-style: none;
+gap: 30px;
+
+}
+
+
+.navbar-textlink a {
+text-decoration: none;
+color:#6b7280;
+font-size: 16px;
+font-weight: 500;
+
+}
+
+.register-button{
+background-color: #1D4ED8;
+color:#ffffff;
+padding: 10px 20px;
+font-size: 16px;
+font-weight: 500;
+border: none;
+border-radius: 10px;
+}
