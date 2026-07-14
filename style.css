@@ -175,3 +175,179 @@ transform: translateY(-40px);
     padding: 24px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   PRICE SECTION LAYOUT
+   ========================================================================== */
+.price {
+    background-color: #ffffff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.price-title {
+    font-size: 38px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 12px;
+}
+
+.price-subtitle {
+    font-size: 16px;
+    color: #64748b;
+    margin-bottom: 60px;
+}
+
+.price-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    max-width: 1140px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+/* ==========================================================================
+   WHITE CARD DEFAULT DESIGNS (CARD 1 & CARD 3)
+   ========================================================================== */
+.price-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 40px 32px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.plan-name {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #64748b;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.price-box {
+    display: flex;
+    align-items: flex-start;
+    color: #0f172a;
+}
+
+.currency {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 6px;
+    margin-right: 2px;
+}
+
+.amount {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.price-per {
+    font-size: 14px;
+    color: #64748b;
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+
+.divider {
+    border: 0;
+    border-top: 1px solid #f1f5f9;
+    margin-bottom: 32px;
+}
+
+.features-list {
+    list-style: none;
+    margin-bottom: 40px;
+    flex-grow: 1;
+}
+
+.features-list li {
+    font-size: 15px;
+    color: #475569;
+    margin-bottom: 16px;
+    position: relative;
+    padding-left: 24px;
+}
+
+.features-list li::before {
+    content: "•";
+    color: #2563eb;
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    left: 4px;
+    top: -2px;
+}
+
+.btn-plan {
+    width: 100%;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-standard, .btn-team {
+    background-color: transparent;
+    color: #2563eb;
+    border: 1px solid #cbd5e1;
+}
+
+/* ==========================================================================
+   DIFFERENT DARK BACKGROUND FOR THE MIDDLE PRO CARD ONLY
+   ========================================================================== */
+.featured-card {
+    background-color: #0b1329 !important; /* Forces the middle card background dark */
+    border: none !important;
+}
+
+.featured-card .plan-name {
+    color: #38bdf8;
+}
+
+.featured-card .price-box, 
+.featured-card .amount, 
+.featured-card .currency {
+    color: #ffffff; /* Turns text inside dark card white */
+}
+
+.featured-card .price-per {
+    color: #94a3b8;
+}
+
+.featured-card .divider {
+    border-top: 1px solid #1e293b;
+}
+
+.featured-card .features-list li {
+    color: #cbd5e1;
+}
+
+.btn-pro {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+}
