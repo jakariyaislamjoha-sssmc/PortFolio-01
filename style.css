@@ -176,23 +176,6 @@ transform: translateY(-40px);
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   PRICE SECTION LAYOUT
-   ========================================================================== */
 .price {
     background-color: #ffffff;
     padding: 100px 20px;
@@ -221,9 +204,6 @@ transform: translateY(-40px);
     align-items: stretch;
 }
 
-/* ==========================================================================
-   WHITE CARD DEFAULT DESIGNS (CARD 1 & CARD 3)
-   ========================================================================== */
 .price-card {
     background-color: #ffffff;
     border: 1px solid #e2e8f0;
@@ -316,11 +296,9 @@ transform: translateY(-40px);
     border: 1px solid #cbd5e1;
 }
 
-/* ==========================================================================
-   DIFFERENT DARK BACKGROUND FOR THE MIDDLE PRO CARD ONLY
-   ========================================================================== */
+
 .featured-card {
-    background-color: #0b1329 !important; /* Forces the middle card background dark */
+    background-color: #0b1329 !important; 
     border: none !important;
 }
 
@@ -331,7 +309,7 @@ transform: translateY(-40px);
 .featured-card .price-box, 
 .featured-card .amount, 
 .featured-card .currency {
-    color: #ffffff; /* Turns text inside dark card white */
+    color: #ffffff; 
 }
 
 .featured-card .price-per {
@@ -350,4 +328,109 @@ transform: translateY(-40px);
     background-color: #2563eb;
     color: #ffffff;
     border: none;
+}
+
+
+
+
+.highlights-section {
+    background-color: #f8fafc; 
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.highlights-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 12px;
+}
+
+.highlights-subtitle {
+    font-size: 16px;
+    color: #64748b;
+    margin-bottom: 54px;
+}
+
+
+.highlights-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+.highlight-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.02);
+    transition: transform 0.3s ease;
+}
+
+.highlight-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.highlight-icon-box {
+    font-size: 28px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.highlight-card h3 {
+    font-size: 20px;
+    color: #0f172a;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.highlight-card p {
+    font-size: 15px;
+    color: #475569;
+    line-height: 1.6;
+}
+
+
+
+/* ==========================================================================
+   AI CHALLENGE SECTION: SIMPLE VIDEO STYLES
+   ========================================================================== */
+.video-highlights-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.video-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #0f172a; /* Premium dark slate */
+    margin-bottom: 8px;
+}
+
+.video-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #475569; /* Balanced slate gray */
+    margin-bottom: 30px;
+}
+
+.video-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1); /* Soft premium shadow drop */
+    border-radius: 4px; /* Subtle crisp border roundness */
 }
